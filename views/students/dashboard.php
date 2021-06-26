@@ -1,6 +1,7 @@
 <h4 class="page-title">Dashboard</h4>
-<a href="index.php?page=student&method=add" class="btn btn-danger">Thêm mới</a>
-<div class="col-md-12">
+
+<div class="row">
+    <div class="col-md-12">
 	<div class="card">
 		<div class="card-header ">
 			<h4 class="card-title">Student List</h4>
@@ -18,6 +19,7 @@
 			</form>
 		</div>
 		<div class="card-body">
+            <button class="btn btn-success mb-3">Success</button>
 			<table id="list-students" class="table table-head-bg-success table-striped table-hover">
 				<thead>
                     <tr>
@@ -46,4 +48,5 @@
 			</table>
 		</div>
 	</div>
+</div>
 </div>
