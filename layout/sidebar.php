@@ -39,14 +39,14 @@
 			<li class="nav-item active">
 				<a href="index.php">
 					<i class="la la-dashboard"></i>
-					<p>Dashboard</p>
+					<p>Học viên</p>
 					<span class="badge badge-count">5</span>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="components.html">
+				<a href="index.php?page=faculty">
 					<i class="la la-table"></i>
-					<p>Components</p>
+					<p>Khoa</p>
 					<span class="badge badge-count">14</span>
 				</a>
 			</li>

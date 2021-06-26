@@ -30,6 +30,12 @@
 									$stu = new StudentController;
 									$stu->students();
 									break;
+
+                                case 'faculty':
+                                    include_once 'controller/FacultyController.php';
+                                    $fac = new FacultyController();
+                                    $fac->faculty();
+                                    break;
 								
 								default:
 									# code...

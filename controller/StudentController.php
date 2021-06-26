@@ -2,7 +2,7 @@
 
     include_once 'model/Student.php';
 
-    class StudentController extends Student
+    class StudentController
     {
         private $student;
 
