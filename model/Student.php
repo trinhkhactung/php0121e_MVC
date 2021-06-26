@@ -14,4 +14,21 @@
             $sql = "SELECT *FROM students, faculty WHERE students.faculty_id  = faculty.id";
             return $this->pdo->query($sql);
         }
+
+        public function getFaculty(){
+            $sql = "SELECT *FROM faculty";
+            return $this->pdo->query($sql);
+        }
+
+        public function create($faculty_id, $name, $email, $phone, $address){
+            $sql = "INSERT INTO students(faculty_id, name, email, phone, address) VALUES(:faculty_id, :name, :email, :phone, :address)";
+            $pre = $this->pdo->prepare($sql);
+            $pre->bindParam(':faculty_id', $faculty_id);
+            $pre->bindParam(':name', $name);
+            $pre->bindParam(':email', $email);
+            $pre->bindParam(':phone', $phone);
+            $pre->bindParam(':address', $address);
+            return $pre->execute();
+        }
+
     }

@@ -19,7 +19,7 @@
 			</form>
 		</div>
 		<div class="card-body">
-            <button class="btn btn-success mb-3">Success</button>
+            <a href="index.php?page=student&method=add" class="btn btn-success mb-3">Thêm mới</a>
 			<table id="list-students" class="table table-head-bg-success table-striped table-hover">
 				<thead>
                     <tr>
